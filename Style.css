@@ -1,152 +1,60 @@
-html, body {
-  margin: 0;
-  padding: 0;
-}
+<!DOCTYPE html>
+<html>
 
-body {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 100;
-}
+<head>
+  <title>Vacation World</title>
+</head>
 
-.container {
-  margin: 0 auto;
-  max-width: 940px;
-  padding: 0 10px;
-}
+<body>
+  <img src="https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-2/explorer.jpeg" />
+  <h1 class="title">Top Vacation Spots</h1>
+  <h5>By: Stacy Gray</h5>
+  <h6>Published: 2 Days Ago</h6>
 
-.header {
-  background: url(http://s3.amazonaws.com/codecademy-content/projects/innovation-cloud/bg.jpg) no-repeat center center;
-  background-size: cover;
-  height: 800px;
-  text-align: center;
-}
+  <p style="font-family: Arial;">The world is full of fascinating places. Planning the perfect vacation involves packing up, leaving home, and experiencing something new.</p>
 
-.header .container {
-  position: relative;
-  top: 200px;
-}
+  <h2 class="destination">1. Florence, Italy</h2>
+  <div class="description">A city-size shrine to the Renaissance, Florence offers frescoes, sculptures, churches, palaces, and other monuments from the richest cultural flowering the world has known. Names from its dazzling historical pastDante, Michelangelo, Galileo, Machiavelliare some of the most resonant of the medieval age. <a href="http://travel.nationalgeographic.com/travel/city-guides/florence-italy/" target="_blank">Learn More</a>.
+    <h5>Top Attractions</h5>
+    <ul>
+      <li>Museums</li>
+      <li>Bike Tours</li>
+      <li>Historical Monuments</li>
+    </ul>
+  </div>
 
-.header h1 {
-  color: #fff;
-  line-height: 100px;
-  font-size: 80px;
-  margin-top: 0;
-  margin-bottom: 80px;
-  text-transform: uppercase;
-}
+  <h2 class="destination">2. Beijing, China</h2>
+  <div class="description">A city in the midst of reinventing itself and continuing to build on the success of the 2008 Summer Olympics, Beijing is a place of frenzied construction. New housing, new roads, and new sports venues seem to spring up overnight. At the same time, the capital of the Peoples Republic of China remains an epicenter of tradition, with the treasures of nearly 2,000 years as the imperial capital still on viewin the famed Forbidden City and in the luxuriant pavilions and gardens of the Summer Palace.
+    <a href="http://travel.nationalgeographic.com/travel/city-guides/beijing-china/" target="_blank">Learn More</a>.
+    <h5>Top Attractions</h5>
+    <ul>
+      <li>Biking</li>
+      <li>Historical Sites</li>
+      <li>Restaurants and Dining</li>
+    </ul>
+  </div>
 
-@media (min-width:850px) {
-  .header h1 {
-    font-size: 120px;
-  }
-}
+  <h2 class="destination">3. Seoul, South Korea</h2>
+  <div class="description">The Korean capital is a city of contrasts. Fourteenth-century city gates squat in the shadow of 21st-century skyscrapers, while the broad Han River is back-dropped by granite mountains rising in the city centercomplete with alpine highways speeding around their contours and temples nestling among their crags. Fashionable, gadget-laden youths battle for sidewalk space with fortune-tellers and peddlers, while tiny neighborhoods of traditional cottages contrast with endless ranks of identical apartments.
+    <a href="http://travel.nationalgeographic.com/travel/city-guides/seoul-south-korea/" target="_blank">Learn More</a>.
+    <h5>Top Attractions</h5>
+    <ul>
+      <li>Parasailing</li>
+      <li>Segway Tours</li>
+      <li>Spas and Resorts</li>
+    </ul>
+  </div>
 
-.header p {
-  color: #fff;
-  font-weight: 500;
-  letter-spacing: 8px;
-  margin-bottom: 40px;
-  margin-top: 0;
-  text-transform: uppercase;
-}
+  <h2> More Desinations </h2>
+  <ul>
+    <li><h4 class="destination">Jackson Hole, Wyoming</h4></li>
+    <li><h4 class="destination">Cape Town, South Africa</h4></li>
+    <li><h4 class="destination">La Paz, Bolivia</h4></li>
+  </ul>
 
-.btn {
-  color: #fff;
-  background: #000;
-  padding: 10px 40px;
-  text-decoration: none;
-  transition: background .5s;
-}
+  <p>&mdash;Best of luck with your travels, and be sure to send pictures and stories. We"d love to hear them!</p>
 
-.nav {
-  background: #000;
-  height: 80px;
-  width: 100%;
-}
 
-.nav ul {
-  height: 80px;
-  list-style: none;
-  margin: 0 auto;
-  padding: 0;
-}
+</body>
 
-.nav ul li {
-  color: #fff;
-  display: inline-block;
-  height: 80px;
-  line-height: 80px;
-  list-style: none;
-  padding: 0 10px;
-  transition: background .5s;
-}
-
-.btn:hover, .nav ul li:hover {
-  background: #117bff;
-  cursor: pointer;
-  transition: background .5s;
-}
-
-.main .container {
-  margin: 80px auto;
-}
-
-.main img {
-  float: left;
-  margin: 50px 80px 50px 0;
-}
-
-.jumbotron {
-  background: url(http://s3.amazonaws.com/codecademy-content/projects/innovation-cloud/jumbotron_bg.jpg) center center;
-  background-size: cover;
-  height: 600px;
-}
-
-.jumbotron .container {
-  position: relative;
-  top: 220px;
-}
-
-.jumbotron h2 {
-  color: #fff;
-  text-align: right;
-}
-
-.jumbotron p {
-  color: #fff;
-  text-align: right;
-}
-
-.jumbotron .btn {
-  margin: 10px 0 0;
-  float: right;
-}
-
-.footer {
-  background: #000;
-  height: 80px;
-  padding-bottom: 50px;
-}
-
-.footer p {
-  color: #fff;
-  font-size: 14px;
-  height: 80px;
-  line-height: 80px;
-  margin: 0;
-}
-
-@media (max-width: 500px) {
-  .header h1 {
-    font-size: 50px;
-    line-height: 64px;
-  }
-
-  .main, .jumbotron {
-    padding: 0 30px;
-  }
-
-  .main img {
-    width: 100%;
-  }
-}
+</html>
