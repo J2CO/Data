@@ -103,7 +103,9 @@ a.home {
 }
 
 /* Font Card Sections */
-
+.space .sample .text {
+  font-style: "Space Mono", monospace;
+}
 .font-card {
   background-color: #ffffff;
   margin: 50px 0;
