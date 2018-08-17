@@ -82,7 +82,6 @@ a.home {
   margin-top: 77px;
   text-align: center;
   font-weight: bold;
-  line-height: 1.4;
 }
 
 .banner p {
@@ -91,6 +90,7 @@ a.home {
   padding: 10px;
   color: #ffffff;
   font-weight: bold;
+  line-height: 1.4;
 }
 
 /* Editorial Sections */
