@@ -16,8 +16,9 @@ h1 {
 .publish-time {
   color: gray;
 }
-
-#article-title {
-  font-family: cursive;
+.cursive {
+ 	font-family: cursive;
+}
+.capitalize {
   text-transform: capitalize;
 }
