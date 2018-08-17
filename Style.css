@@ -2,7 +2,9 @@
   margin: 0;
   Padding: 0
 }
-
+.donate {
+  visibility: hidden;
+}
 body {
   background-color: #FFF;
   font-family: 'Raleway', sans-serif;
