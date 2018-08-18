@@ -14,6 +14,8 @@ main {
   justify-items: center;
   justify-content: space-around;
   align-items: stretch;
+  height: 1600px;
+  align-content: center;
 }
 
 h2 {
@@ -89,4 +91,4 @@ img {
 
 footer {
   margin-top: 44px;
-} 
+}
