@@ -1,189 +1,124 @@
-@font-face {
-	font-family: WorkSans;
-	src: url("https://s3.amazonaws.com/codecademy-content/courses/learn-css-grid/project-ii/Resources/Work_Sans/WorkSans-Regular.ttf");
-}
-@font-face {
-	font-family: Poppins;
-	src: url("https://s3.amazonaws.com/codecademy-content/courses/learn-css-grid/project-ii/Resources/Poppins/Poppins-Regular.ttf");
-}
-
-html {
-    height: 100%;
-}
 body {
-    height: 100%;
-    margin: 0;
-    background-image: linear-gradient(359deg, #3023ae, #eb7f7b);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+  font-size: 1.2em;
 }
 
-.navbar {
-    display: grid;
-    grid-template-columns: 10px 1fr 3fr 1fr;
-    position: absolute;
-    width: 100%;
-    height: 60px;
-    background-color: rgba(120,70,154, 0.2);
-    text-align: center;
-    top: 0;
-    left: 0;
-    justify-content: space-around;
+#app {
+  width: 90%;
+  margin: auto;
 }
 
-.navbar h1 {
-	font-family: Poppins;
-    color: #ffffff;
-    margin: 0;
-    align-self: center;
+
+.grid {
+	display: grid;
+  width: 900px;
+  height: 3000px;
+  margin: auto;
+  grid-template: repeat(30, 1fr) repeat(12, 1fr);  }
+
+img {
+  max-width: 100%;
 }
 
-.container {
-	width: 1000px;
-  display: grid;
-  grid-template-columns: repeat (3, 1fr);
-  grid-gap: 20px;
-  grid-auto-rows: 20px, 100px;
+/* set 1: repurposed living */
+.a {
+	grid-area: 1 / 3 / 5 / 13;
 }
 
-.search-bar {
-	display: inline-block;
-	width: 23%;
-	height: 40px;
-	background-color: rgba(255,255,255, 0.35);
-	left: 50px;
-  top: 8px;
-  position: absolute;
+.b {
+  grid-area: 2 / 2 / 3 / 4;
 }
 
-input {
-	display: inline-block;
-	border: none;
-	background: transparent;
-	font-size: 14px;
+.c {
+  grid-area: 4 / 1 / 5 / 4;
 }
 
-.search-bar input {
-	float: left;
-	height: 18px;
-  margin-top: 9px;
-  margin-left: 7px;
+/* set 2: angles */
+
+.d {
+  grid-area: 5 / 1 / 12/ 7;
 }
 
-.card-column input {
-	height: 18px;
-  margin-left: 15px;
-
+.e {
+  grid-area: 6 / 6 / 9 / 10;
 }
 
-.search-icon {
-	float: left;
-  margin-top: 9px;
-  margin-left: 7px;
+.f {
+  grid-area: 7 / 7 / 10 / 10;
 }
 
-.card-column {
-	background-color: #ffffff;
-  min-height: 700px;
-  display: grid;
-  grid-template-rows: 20px repeat(5, 100px);
-  align-content: space-between;
+.g {
+  grid-area: 8 / 3 / 16 / 13;
 }
 
-.card-column h2 {
-	padding: 0;
-  margin: 0 auto;
-  font-family: WorkSans;
-  font-size: 16px;
-	font-weight: 600;
-	letter-spacing: 0.2px;
-	text-align: left;
-	color: #2f2f2f;
-	display: inline-block;
+.h {
+  grid-area: 9 / 2 / 14 / 5;
 }
 
-.taskgroup-heading {
-	margin-left: 15px;
-	margin-top: 7px;
+.i {
+  grid-area: 10 / 1 / 15 / 4;
 }
 
-.site-body {
-	position: absolute;
-	top: 100px;
-	margin-left: 50px;
+.j {
+  grid-area: 11 / 1 / 22 / 7;
 }
 
-.card {
-	margin-right: 15px;
-	margin-left: 15px;
-	background-color: rgba(216, 216, 216, 0.21);
-	border: solid 1px rgba(151,151,151,0.21);
-	position: relative;
+.k {
+  grid-area: 12 / 6 / 19 / 10;
 }
 
-.rectangle {
-  width: 57px;
-  height: 6px;
-  position: relative;
-  display: inline-block;
-  margin-left: 7px;
+.l {
+  grid-area: 13 / 7 / 20 / 9;
 }
 
-.list-icon {
-	display: inline-block;
-	margin-left: 7px;
-	margin-bottom: 5px;
-	position: absolute;
-	bottom: 0;
+.m {
+  grid-area: 14 / 3 / 27 / 13;
 }
 
-.task-description {
-	margin-left: 7px;
-	margin-top: 0;
-	font-family: WorkSans;
-	font-size: 14px;
-	letter-spacing: 0.2px;
-	text-align: left;
-	color: #2f2f2f;
+.n {
+  grid-area: 15 / 2 / 24 / 5;
 }
 
-.ellipsis-icon {
-	display: inline-block;
-	float: right;
-  margin-right: 15px;
+.o {
+  grid-area: 16 / 1 / 26 / 4;
+}
+.headLine {
+  margin-top: 5vh;
+  height: 20vh;
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  font-size: 120%;
+  margin-bottom: 10vh;
 }
 
-.task-date {
-	display: inline-block;
-	font-family: WorkSans;
-	font-size: 10px;
-	letter-spacing: 0.1px;
-	text-align: left;
-	color: #9b9b9b;
-	position: absolute;
-  bottom: 0;
-  margin-bottom: 5px;
-  left: 25px;
+.box {
+  font-family: 'Roboto Slab', serif;
+  font-size: 90%;
 }
 
-.yellow {
-	background-color: #fdcb1e;
+.title {
+  font-weight: 700;
+  font-size: 180%;
+  font-family: 'Playfair Display', serif;
+  text-decoration: underline;
 }
 
-.orange {
-	background-color: #ff7700;
+/* media queries */
+
+@media (min-width: 1150px) {
+  #app {
+    width: 80%;
+    margin: auto;
+  }
 }
 
-.green {
-	background-color: #50e3c2;
-}
+@media (max-width: 650px) {
+  .grid {
 
-.blue {
-	background-color: #3343e5;
-}
+  }
 
-.add-card {
-	background-color: rgba(216, 216, 216, 0.21);
-  border: solid 1px rgba(151,151,151,0.21);
-  color: #2f2f2f;
+  .title {
+    width: 65%;
+    font-size: 120%;
+  }
 }
