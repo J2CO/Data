@@ -1,2 +1,2 @@
-let changeMe = false;
-console.log(changeMe);
+let valueless;
+console.log(valueless);
