@@ -1,9 +1,13 @@
-//Kelvin is always 293
-const kelvin = 293;
-//Celsius is 273degrees lower than Kelvin
-const celsius = kelvin-273;
-//converting C to F
-let fahrenheit = celsius*(9/5)+32;
-//putting a floor to the temp
-fahrenheit = Math.floor(fahrenheit);
-console.log(`The temperature is ${fahrenheit} degrees Fahrenheit.`);
+//Setting myAge var
+let myAge = 40;
+//Setting earlyYears var
+let earlyYears = 2;
+earlyYears *= 10.5;
+//Setting laterYears var
+let laterYears = myAge - 2;
+//Calculating Dog years by multiplying by 4
+laterYears *= 4;
+//adding early & later years
+let myAgeInDogYears = earlyYears + laterYears;
+'Peter' .toLowerCase();
+console.log(`My name is ${myName}. I am ${myAgeInDogYears} years old in dog years.`);
