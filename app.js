@@ -1,12 +1,40 @@
-let isLocked = false;
+let userName = "PJ";
+let userQuestion = "What do you have for me today Magic 8-Ball?";
+const randomNumber = Math.floor(Math.random() * 8);
+let eightBall = "";
 
-isLocked ? console.log('You will need a key to open the door.') : console.log('You will not need a key to open the door.');
+userName === "" ? console.log('Hello') : console.log('Hello, PJ!');
+console.log(userQuestion);
 
-let isCorrect = true;
-
-isCorrect ? console.log('Correct!') : console.log('Incorrect!');
-
-
-let favoritePhrase = 'Love That!';
-
-favoritePhrase === 'Love That!' ? console.log('I love that!') : console.log("I don't love that!");
+switch (randomNumber) {
+  case 0:
+    eightBall = 'It is certain';
+    break;
+  case 1:
+    eightBall = 'It is certain';
+    break;
+  case 2:
+    eightBall = 'It is decidedly so';
+    break;
+  case 3:
+    eightBall = 'Reply hazy try again';
+    break;
+  case 4:
+    eightBall = 'Cannot predict now';
+    break;
+  case 5:
+    eightBall = 'Do not count on it';
+    break;
+  case 6:
+    eightBall = 'My sources say no';
+    break;
+  case 7:
+    eightBall = 'Outlook not so good';
+    break;
+  case 8:
+    eightBall = 'Signs point to yes';
+    break;
+  default:
+    break;
+}
+console.log(`The eight ball answered: ${eightBall}`);  
