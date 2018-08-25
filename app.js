@@ -1,40 +1,19 @@
-let userName = "PJ";
-let userQuestion = "What do you have for me today Magic 8-Ball?";
-const randomNumber = Math.floor(Math.random() * 8);
-let eightBall = "";
-
-userName === "" ? console.log('Hello') : console.log('Hello, PJ!');
-console.log(userQuestion);
-
-switch (randomNumber) {
-  case 0:
-    eightBall = 'It is certain';
-    break;
-  case 1:
-    eightBall = 'It is certain';
-    break;
-  case 2:
-    eightBall = 'It is decidedly so';
-    break;
-  case 3:
-    eightBall = 'Reply hazy try again';
-    break;
-  case 4:
-    eightBall = 'Cannot predict now';
-    break;
-  case 5:
-    eightBall = 'Do not count on it';
-    break;
-  case 6:
-    eightBall = 'My sources say no';
-    break;
-  case 7:
-    eightBall = 'Outlook not so good';
-    break;
-  case 8:
-    eightBall = 'Signs point to yes';
-    break;
-  default:
-    break;
+let raceNumber = Math.floor(Math.random() * 1000);
+let registeredEarly = false;
+let runnerAge = 18;
+if(registeredEarly && runnerAge > 18) {
+  raceNumber += 1000;
 }
-console.log(`The eight ball answered: ${eightBall}`);  
+
+if(registeredEarly && runnerAge > "18"){
+  console.log(`Your Race begins at 9:30am and your Number is: ${raceNumber}.`);
+}
+else if(!registeredEarly && runnerAge > "18"){
+  console.log(`Your Race begins at 11:00am and your Number is: ${raceNumber}.`);
+}
+else if(runnerAge < "18"){
+  console.log(`Your Race begins at 12:30pm and your Number is: ${raceNumber}.`);
+}
+else {
+  console.log('Please check-in at the Registration desk - thanks!');
+}
